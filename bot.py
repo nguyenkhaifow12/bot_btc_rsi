@@ -15,6 +15,7 @@ def get_rsi():  # Ví dụ tạm thời, bạn thay bằng real data
 
 def main_loop():
     while True:
+        send_telegram("✅ Bot đã khởi động thành công!")
         rsi = get_rsi()
         print(f"RSI hiện tại: {rsi:.2f}")
         if rsi < 30:
